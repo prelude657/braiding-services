@@ -16,8 +16,8 @@ and contact the salon directly via WhatsApp for appointment requests.
 
 src/
 ├── components/ # Shared UI components (e.g. Header, SubscriptionInfo)
+├── components/photos #photos
 ├── pages/ # Route-based pages like Home, About, Contact
-├── assets/ # Images and static content
 ├── App.jsx # Main layout and router setup
 ├── main.jsx # Entry point for React
 
