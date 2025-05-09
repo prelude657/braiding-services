@@ -1,0 +1,244 @@
+/* Service Wrapper */
+.serviceWrapper {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Left Column */
+  .leftColumn {
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-top: 40px;
+  }
+  
+  /* Service Buttons */
+  .serviceButton {
+    padding: 12px 20px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+  }
+  
+  .serviceButton:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.02);
+  }
+  
+  .serviceButton.active {
+    background-color: #dcdcdc;
+    border-color: goldenrod;
+    font-weight: bold;
+  }
+  
+  /* Right Column */
+  .rightColumn {
+    width: 100%;
+  }
+  
+  /* Service Description Box */
+  .serviceDescription {
+    background-color: bisque;
+    border: 3px solid black;
+    border-radius: 3px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Ensure text is centered horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  .serviceImages {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .servicePhoto {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    border: black solid 3px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 16px 0;
+    text-align: center;
+    margin-bottom: 37px;
+    margin-top: 0px
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  /* Book Now Button */
+  .bookNowButton {
+    background-color: #8c52ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .bookNowButton:hover {
+    background-color: #7a45e3;
+    transform: scale(1.02);
+  }
+  
+  .whatsAppButtonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* Optional spacing from the element above */
+  }
+  
+  .whatsAppButton {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  .whatsAppButton:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+  }
+  
+  .whatsAppIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modalContent {
+    background-color: #fff8f0;
+    padding: 30px 24px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    position: relative;
+    text-align: left;
+  }
+  
+  .modalContent h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .modalContent p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .modalContent form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .modalContent label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .modalContent input,
+  .modalContent select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .modalContent input:focus,
+  .modalContent select:focus {
+    outline: none;
+    border-color: #8c52ff;
+  }
+  
+  .submitButton {
+    background-color: #8c52ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .submitButton:hover {
+    background-color: #7a45e3;
+    transform: scale(1.02);
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .closeButton:hover {
+    color: #333;
+  }
+  

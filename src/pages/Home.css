@@ -1,0 +1,16 @@
+.header {
+    text-align: center; /* Centers the text horizontally */
+    font-size: .55em;
+    padding: .7em;
+  }
+
+  body{
+    background-color: #f1ece8;
+  }
+  h1{
+    padding: 32px 81px 31px 90px;
+    font-size: 26px;
+    border-bottom: black solid;
+    border-top: black solid;
+    margin-bottom: 8px;
+    }

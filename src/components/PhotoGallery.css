@@ -1,0 +1,106 @@
+.galleryWrapper {
+  width: 99%;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: bisque;
+  border: #000 solid 5px;
+  margin-bottom: 50px;
+}
+
+.galleryViewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.galleryTrack {
+  display: flex;
+}
+
+.galleryImage {
+  width: 100%;
+  max-width: calc(100% / 5 - 10px);
+  height: 300px;
+  margin: 0 5px;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galleryImage:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.arrowButton.left {
+  left: 5px;
+}
+
+.arrowButton.right {
+  right: 5px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modalImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}

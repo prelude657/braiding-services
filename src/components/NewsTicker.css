@@ -1,0 +1,36 @@
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-top: 2px solid goldenrod;
+    border-bottom: 2px solid goldenrod;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .ticker-track {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll-left 45s linear infinite;
+  }
+  
+  .ticker-content span {
+    display: inline-block;
+    padding-right: 2rem;
+    font-size: 1.1em;
+    font-family: 'Arial', sans-serif;
+    color: goldenrod;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
