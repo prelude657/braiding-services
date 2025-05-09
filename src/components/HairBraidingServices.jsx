@@ -69,7 +69,6 @@ function HairBraidingServices() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [formData, setFormData] = useState({
     name: '',
-    date: '',
     time: '',
   });
 
@@ -78,9 +77,6 @@ function HairBraidingServices() {
   const handleWhatsApp = () => {
     let message = `Hi Baiana Braids team! I would like to book an appointment for ${service.name} (${service.price}).`;
 
-    if (formData.name) message += `\nName: ${formData.name}`;
-    if (formData.date) message += `\nDate: ${formData.date}`;
-    if (formData.time) message += `\nTime: ${formData.time}`;
 
     message += `\nPlease let me know what dates and times are available. Thank you!`;
 

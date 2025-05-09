@@ -2,7 +2,23 @@ import React from 'react';
 import './SubscriptionInfo.css';
 
 function SubscriptionInfo() {
+
+  const handleWhatsApp = () => {
+    let message = `Hi Baiana Braids team! I heard about your subscription service!`;
+
+
+    message += `\nPlease send me more information. Thank you!`;
+
+    const phoneNumber = '5571983959413'; // Brazil number (no +)
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, '_blank');
+  };
+
+
   return (
+
+    
     <div className="subscription-container">
       <div className="subscription-content">
         <h2>Loyalty Braiding Subscription</h2>
@@ -19,14 +35,14 @@ function SubscriptionInfo() {
           Join our community of beautiful, confident women who trust us not only to style their hair — but to care for it with the consistency it deserves.
         </p>
         <div className='subscription-whatsapp'>
-            <a
-                href="https://wa.me/15551234567?text=Hello%20Baiana%20Braids%20Team.%20I%20am%20interested%20in%20joining%20your%20subscription%20plan."
-                className="subscribe-button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Enroll via WhatsApp
-            </a>
+           <button className="whatsAppButton" onClick={handleWhatsApp}>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/6/60/WhatsApp.svg"
+                alt="WhatsApp"
+                className="whatsAppIcon"
+              />
+              Contact via WhatsApp
+            </button>
         </div>
       </div>
     </div>
