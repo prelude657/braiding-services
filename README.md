@@ -1,12 +1,47 @@
-# React + Vite
+# Baiana Braids
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Baiana Braids is a modern, responsive React application designed for a professional hair braiding business. 
+It provides an interactive experience for clients to browse services, view style images, check pricing, 
+and contact the salon directly via WhatsApp for appointment requests.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧵 Interactive list of braiding services with detailed descriptions
+- 🖼️ Image gallery for each style
+- 📲 Integrated WhatsApp button for direct communication
+- 📱 Fully responsive layout for mobile and desktop
+- 💬 Ticker banner for news, offers, and updates
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├── components/ # Shared UI components (e.g. Header, SubscriptionInfo)
+├── pages/ # Route-based pages like Home, About, Contact
+├── assets/ # Images and static content
+├── App.jsx # Main layout and router setup
+├── main.jsx # Entry point for React
+
+
+## 🛠️ Tech Stack
+
+- React
+- React Router
+- Vite (for build & dev)
+- CSS (custom styles, no Tailwind)
+- WhatsApp Web API
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/prelude657/braiding-services.git
+   cd braiding-services
+   
+# Install Dependencies
+npm install
+
+# Run The App
+npm run dev
+
+
+
